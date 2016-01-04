@@ -1,0 +1,48 @@
+GIT
+BASIC GIT WORKFLOW
+SUMMARY
+Git is the industry-standard version control system for web developers
+Use Git commands to help keep track of changes made to a project:
+•	git init creates a new Git repository
+•	git status inspects the contents of the working directory and staging area
+•	git add adds files from the working directory to the staging area
+•	git diff shows the difference between the working directory and the staging area
+•	git commit permanently stores file changes from the staging area in the repository
+•	git log shows a list of all previous commits
+
+A Git project can be thought of as having three parts:
+1.	A Working Directory: where you'll be doing all the work: creating, editing, deleting and organizing files
+2.	A Staging Area: where you'll list changes you make to the working directory
+3.	A Repository: where Git permanently stores those changes as different versions of the project
+ 
+
+HOW TO BACKTRACK
+You've learned three different ways to backtrack in Git. You can use these skills to undo changes made to your Git project.
+Let's take a moment to review the new commands:
+•	git checkout HEAD filename: Discards changes in the working directory.
+•	git reset HEAD filename: Unstages file changes in the staging area.
+•	git reset SHA: Can be used to reset to a previous commit in your commit history.
+To better understand git reset commit_SHA, notice the diagram on the right. Each circle represents a commit.
+Before reset:
+	HEAD is at the most recent commit
+After resetting:
+	HEAD goes to a previously made commit of your choice
+	The gray commits are no longer part of your project
+	You have in essence rewinded the project's history
+ 
+
+BRANCHING
+Let's take a moment to review the main concepts and commands from the lesson before moving on.
+
+Git branching allows users to experiment with different versions of a project by checking out separate branches to work on.
+The following commands are useful in the Git branch workflow;
+•	git branch: Lists all a Git project's branches.
+•	git branch branch_name: Creates a new branch.
+•	git checkout branch_name: Used to switch from one branch to another.
+•	git merge branch_name: Used to join file changes from one branch to another.
+•	git branch -d branch_name: Deletes the branch specified.
+ 
+TEAMWORK
+
+REMOTES
+A remote is a shared Git repository that allows multiple collaborators to work on the same Git project from different locations. Collaborators work on the project independently, and merge changes together when they are ready to do so.
